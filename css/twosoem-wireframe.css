@@ -1018,6 +1018,7 @@ footer {
 
 footer .footer-top {
 	max-width: 1200px;
+	height: auto;
 	margin: 0 auto;
 
 }
@@ -1335,11 +1336,11 @@ footer a.back-to-top img {
 	footer .footer-top ul li:nth-child(4){
 		margin-left: 0;
 	}
-	footer .footer-bottom .footer-img img {
-	width: 200px; 
+	footer .footer-bottom .footer-img{
+	display: none;
 }
 	footer .footer-bottom .footer-info {
-	top: 35px;
+	top: 10px;
 }
 }
 
