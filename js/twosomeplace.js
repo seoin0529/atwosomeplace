@@ -44,11 +44,14 @@ $("document").ready(function(){
 	
 	var main = $(".m-nav-wrap .m-layout .nav-layout-b > ul > li"),
 		sub =$(".m-nav-wrap .m-layout .nav-layout-b .sub-m"),
+		sub_ul=$(".m-nav-wrap .m-layout .nav-layout-b .sub-m ul li"),
 		a = 0;
 	$(main).click(function(){
 		a = $(main).index(this);
 $(sub).eq(a).slideToggle(500);
-$(main).eq(a).toggleClass("click")
+$(main).eq(a).toggleClass("click");
+	
+
 	})//모바일메뉴 아코디언
 
 var $m_menu =$(".m-nav-wrap .m-layout"),
@@ -59,7 +62,9 @@ var $m_menu =$(".m-nav-wrap .m-layout"),
 	})//모바일메뉴 열기
 	$close_btn.click(function(){
 		$m_menu.fadeOut(300);
-	})
+		$(sub).slideUp();
+		$(main).removeClass("click");
+	}) //모바일메뉴닫기
 
 	
 	
