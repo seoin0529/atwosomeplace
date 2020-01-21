@@ -42,18 +42,20 @@ $("document").ready(function(){
 	
 	
 	
-	var main = $(".m-nav-wrap .m-layout .nav-layout-b > ul > li"),
-		sub =$(".m-nav-wrap .m-layout .nav-layout-b .sub-m"),
-		sub_ul=$(".m-nav-wrap .m-layout .nav-layout-b .sub-m ul li"),
+	var main = $(".m-nav-wrap .m-layout .nav-layout-b > ul > li > .main"),
+		sub =$(".m-nav-wrap .m-layout .nav-layout-b ul li .sub-m"),
+		sub_ul=$(".m-nav-wrap .m-layout .nav-layout-b .sub-m li"),
 		a = 0;
 	$(main).click(function(){
 		a = $(main).index(this);
 $(sub).eq(a).slideToggle(500);
 $(main).eq(a).toggleClass("click");
+
+		
+})//모바일메뉴 아코디언
+
 	
-
-	})//모바일메뉴 아코디언
-
+	
 var $m_menu =$(".m-nav-wrap .m-layout"),
 	$open_btn =$(".m-nav-wrap .menu-btn "),
 	$close_btn=$(".m-nav-wrap .m-layout .nav-layout-t .btn-menu");
@@ -367,39 +369,39 @@ $indicator.eq(0).addClass("active");
 $(window).resize(function(){
 	var width = window.innerWidth;
 	if(width <=640){
-		$(".main-banner .slide-item:nth-child(1) img").attr("src","images/ad_1_m.jpg");
-		$(".main-banner .slide-item:nth-child(2) img").attr("src","images/ad_2_m.jpg");
-		$(".main-banner .slide-item:nth-child(3) img").attr("src","images/ad_3_m.jpg");
-		$(".main-banner .slide-item:nth-child(4) img").attr("src","images/ad_4_m.jpg")
+		$(".main-banner .slide-item:nth-child(1) img").attr("src","http://westai.co.kr/images/ad_1_m.jpg");
+		$(".main-banner .slide-item:nth-child(2) img").attr("src","http://westai.co.kr/images/ad_2_m.jpg");
+		$(".main-banner .slide-item:nth-child(3) img").attr("src","http://westai.co.kr/images/ad_3_m.jpg");
+		$(".main-banner .slide-item:nth-child(4) img").attr("src","http://westai.co.kr/images/ad_4_m.jpg")
 	}else if(width <=1024){
-		$(".main-banner .slide-item:nth-child(1) img").attr("src","images/ad_1_t.jpg");
-		$(".main-banner .slide-item:nth-child(2) img").attr("src","images/ad_2_t.jpg");
-		$(".main-banner .slide-item:nth-child(3) img").attr("src","images/ad_3_t.jpg");
-		$(".main-banner .slide-item:nth-child(4) img").attr("src","images/ad_4_t.jpg")
+		$(".main-banner .slide-item:nth-child(1) img").attr("src","http://westai.co.kr/images/ad_1_t.jpg");
+		$(".main-banner .slide-item:nth-child(2) img").attr("src","http://westai.co.kr/images/ad_2_t.jpg");
+		$(".main-banner .slide-item:nth-child(3) img").attr("src","http://westai.co.kr/images/ad_3_t.jpg");
+		$(".main-banner .slide-item:nth-child(4) img").attr("src","http://westai.co.kr/images/ad_4_t.jpg")
 	}else{
-		$(".main-banner .slide-item:nth-child(1) img").attr("src","images/ad_1.jpg");
-		$(".main-banner .slide-item:nth-child(2) img").attr("src","images/ad_2.jpg");
-		$(".main-banner .slide-item:nth-child(3) img").attr("src","images/ad_3.jpg");
-		$(".main-banner .slide-item:nth-child(4) img").attr("src","images/ad_4.jpg")
+		$(".main-banner .slide-item:nth-child(1) img").attr("src","http://westai.co.kr/images/ad_1.jpg");
+		$(".main-banner .slide-item:nth-child(2) img").attr("src","http://westai.co.kr/images/ad_2.jpg");
+		$(".main-banner .slide-item:nth-child(3) img").attr("src","http://westai.co.kr/images/ad_3.jpg");
+		$(".main-banner .slide-item:nth-child(4) img").attr("src","http://westai.co.kr/images/ad_4.jpg")
 	}
 })
 
 	var width = window.innerWidth;
 	if(width <=640){
-		$(".main-banner .slide-item:nth-child(1) img").attr("src","images/ad_1_m.jpg");
-		$(".main-banner .slide-item:nth-child(2) img").attr("src","images/ad_2_m.jpg");
-		$(".main-banner .slide-item:nth-child(3) img").attr("src","images/ad_3_m.jpg");
-		$(".main-banner .slide-item:nth-child(4) img").attr("src","images/ad_4_m.jpg")
+		$(".main-banner .slide-item:nth-child(1) img").attr("src","http://westai.co.kr/images/ad_1_m.jpg");
+		$(".main-banner .slide-item:nth-child(2) img").attr("src","http://westai.co.kr/images/ad_2_m.jpg");
+		$(".main-banner .slide-item:nth-child(3) img").attr("src","http://westai.co.kr/images/ad_3_m.jpg");
+		$(".main-banner .slide-item:nth-child(4) img").attr("src","http://westai.co.kr/images/ad_4_m.jpg")
 	}else if(width <=1024){
-		$(".main-banner .slide-item:nth-child(1) img").attr("src","images/ad_1_t.jpg");
-		$(".main-banner .slide-item:nth-child(2) img").attr("src","images/ad_2_t.jpg");
-		$(".main-banner .slide-item:nth-child(3) img").attr("src","images/ad_3_t.jpg");
-		$(".main-banner .slide-item:nth-child(4) img").attr("src","images/ad_4_t.jpg")
+		$(".main-banner .slide-item:nth-child(1) img").attr("src","http://westai.co.kr/images/ad_1_t.jpg");
+		$(".main-banner .slide-item:nth-child(2) img").attr("src","http://westai.co.kr/images/ad_2_t.jpg");
+		$(".main-banner .slide-item:nth-child(3) img").attr("src","http://westai.co.kr/images/ad_3_t.jpg");
+		$(".main-banner .slide-item:nth-child(4) img").attr("src","http://westai.co.kr/images/ad_4_t.jpg")
 	}else{
-		$(".main-banner .slide-item:nth-child(1) img").attr("src","images/ad_1.jpg");
-		$(".main-banner .slide-item:nth-child(2) img").attr("src","images/ad_2.jpg");
-		$(".main-banner .slide-item:nth-child(3) img").attr("src","images/ad_3.jpg");
-		$(".main-banner .slide-item:nth-child(4) img").attr("src","images/ad_4.jpg")
+		$(".main-banner .slide-item:nth-child(1) img").attr("src","http://westai.co.kr/images/ad_1.jpg");
+		$(".main-banner .slide-item:nth-child(2) img").attr("src","http://westai.co.kr/images/ad_2.jpg");
+		$(".main-banner .slide-item:nth-child(3) img").attr("src","http://westai.co.kr/images/ad_3.jpg");
+		$(".main-banner .slide-item:nth-child(4) img").attr("src","http://westai.co.kr/images/ad_4.jpg")
 	}
 	
 	}) //end
